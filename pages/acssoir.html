@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../css/acsspoir.css" />
+  </head>
+  <body>
+       <!-- start form-top -->
+    <div class="top-header bg-dark">
+        <div class="container">
+          <div class="content d-flex align-items-center">
+            <div class="col-2 logo">
+              <img
+                style="height: 100%; width: 100%"
+                src="../img/header/logo2.png"
+                alt=""
+              />
+            </div>
+  
+            <div class="col-7 search">
+              <input type="text" placeholder="ابحث من هنا" />
+              <div class="iconserch">
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+            <div class="col-4 left">
+              <div class="leng">
+                <span>use</span>
+                <img
+                  src="../img/header/leng/united-states-svgrepo-com.svg"
+                  alt=""
+                />
+              </div>
+  
+              <div class="icon d-flex align-items-center">
+                <i class="fas fa-shopping-bag"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-user"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- start form-top -->
+  
+      <!-- start nav -->
+      <nav class="navbar sticky-top m-0 p-0">
+        <div class="container">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">الرئيسية</a>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">اكسسوار</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ايفون جولد</a>
+          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="./coonect.html">تواصل معنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">من نحن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">المدونة</a>
+  
+            <li class="nav-item togle d-none">
+              <a class="nav-link"
+                ><i
+                  class="far fa-align-justify"
+                  data-bs-toggle="offcanvas"
+                  href="#offcanvasExample"
+                  role="button"
+                  aria-controls="offcanvasExample"
+                ></i
+              ></a>
+            </li>
+  
+            <div class="logo nav-item d-none col">
+              <img style="width: 75px" src="../img/header/logo2.png" alt="" />
+            </div>
+  
+            <div class="nav-item sochil d-none align-items-center col">
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-whatsapp"></i>
+            </div>
+          </ul>
+        </div>
+      </nav>
+      <!-- End nav -->
+
+
+         <!-- start offcanvas  -->
+         <div
+         class="offcanvas offcanvas-start"
+         tabindex="-1"
+         id="offcanvasExample"
+         aria-labelledby="offcanvasExampleLabel"
+       >
+        
+         <div class="offcanvas-body bg-dark">
+           <div>
+             <div class="parsonil">
+               <div class="content">
+                 <img class="imgpar" src="../img/header/hidd/img-user.jpg" alt="">
+                 <p>mohmed mohmed</p>
+                 <p class=" "> <img class="unitstat"  src="../img/header/leng/united-states-svgrepo-com.svg" alt="">  use </p>
+               </div>
+             </div>
+           </div>
+   
+           <div class="links">
+             <p> <a href="../index.html"> <i class="fas fa-home"></i> الرئيسية </a> </p>
+             <p> <a href="#"> ايفون جولد </a> </p>
+             <p> <a href="#">  اكسسوار </a> </p>
+   
+             <div class="acc accordion" id="accirdion">
+               <div class="accordion-item"> 
+                <h2 class="accordion-header" id="headingOne">
+                   <button class="accordion-button justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#colll" aria-expanded="true" aria-controls="colll">
+                     الاقسام 
+                   </button>
+                 </h2>
+                 <div id="colll" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                   <div class="accordion-body">
+                     <a class="d-block" href="#">ايفون جولد</a>
+                     <a class="d-block" href="#">اكسسوار</a>
+                   </div>
+                 </div>
+               </div>
+   
+             </div>
+   
+          
+   
+   
+             
+   
+             <p> <a href=""> <i class="far fa-newspaper m-2 icon-mobile"></i> المدونة </a> </p>
+             <p> <a href=""> <i class="fa fa-info m-2 icon-mobile"></i> من نحن </a> </p>
+             <p> <a href="./coonect.html"> <i class="fa fa-phone-alt m-2 icon-mobile"></i> تواصل معنا  </a> </p>
+             <p class="text-center"> <a href=""> <i class="fab fa-whatsapp"></i> </a> <a href=""> <i class="fab fa-twitter"></i></a> <a href=""><i class="fab fa-facebook"></i></a> </p>
+   
+             </div>
+            
+           </div>
+         </div>
+       </div>
+  <!--End offcanvas -->
+
+
+
+  <section  class="filter"> 
+    <div class="container">
+       <div class="title d-flex justify-content-between align-items-center">
+          <div class="left d-flex align-items-center">
+              <h2>عرض بواسطة            </h2>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>الافتراضى</option>
+                <option value="1">الاكثر شعبية</option>
+                <option value="2">السعر من الاقل الى الاعلى</option>
+                <option value="3">السعر من الاعلى الى الاقل</option>
+              </select>
+          </div>
+          <div class="right">
+            <i class="fas fa-th-large fa-2x text-dark m-2" aria-hidden="true"></i>
+            <i class="fas fa-list fa-2x text-dark m-2" aria-hidden="true"></i>          </div>
+       </div>
+
+
+       <div class="prodects d-flex">
+           <div class="left">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                     الاقسام
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="form-check">
+                            <label class="form-check-label" for="flexCheckChecked1">
+                               ايفون جولد
+                            </label>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1" >
+                          </div>
+                        <div class="form-check">
+                            <label class="form-check-label" for="flexCheckChecked2">
+                                اكسسوار
+                            </label>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" >
+                          </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                     الماركات
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3" >
+                            <label class="form-check-label" for="flexCheckChecked3">
+                              ابل
+                            </label>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                      السعر
+                    </button>
+                  </h2>
+                  <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="d-flex">
+                            <div class="item w-50">
+                                <label for="one121">من ج.م</label>
+                              <input class="form-control  w-50" id="one121" type="number">
+                            </div>
+                            <div class="item w-50">
+                                <label for="one11">الى ج.م</label>
+                              <input class="form-control  w-50" id="one11" type="number">
+                            </div>
+                        </div>
+                   
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      التقييم
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                       <p><i class="fa fa-star stars-icon yellow"></i><i class="fa fa-star stars-icon yellow"></i><i class="fa fa-star stars-icon yellow"></i><i class="fa fa-star stars-icon yellow"></i><i class="fa fa-star stars-icon yellow"></i></p>
+                        <p><i class="fa fa-star stars-icon yellow"></i><i class="fa fa-star stars-icon yellow"></i><i class="fa fa-star stars-icon yellow"></i><i class="fa fa-star stars-icon yellow"></i></p>
+                        <p><i class="fa fa-star stars-icon yellow"></i><i class="fa fa-star stars-icon yellow"></i><i class="fa fa-star stars-icon yellow"></i></p>
+                        <p><i class="fa fa-star stars-icon yellow"></i><i class="fa fa-star stars-icon yellow"></i></p>
+                        <p><i class="fa fa-star stars-icon yellow"></i></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+
+           <div class="right">
+
+            <section class="max-salary" id="">
+                <div class="container">
+          
+                  <div class="row row-cols-1 row-cols-md-2 g-4 all-prodect">
+                    <div class="col position-relative">
+                      <div class="over position-absolute">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-shopping-bag"></i>
+                      </div>
+                      <div class="card h-100">
+                        <img src="../img/iphone/1.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                          <h5 class="card-title">ايفون 12</h5>
+                          <p class="card-text">
+                            3000000 ح.م <del class="old-salary">4000000 ج.م</del>
+                          </p>
+                          <p class="card-text">
+                            <i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i>
+                          </p>
+                          <button class="btn btn-secondary">
+                            اضف الى السلة <i class="fas fa-shopping-cart text-dark"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col position-relative">
+                      <div class="over position-absolute">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-shopping-bag"></i>
+                      </div>
+                      <div class="card h-100">
+                        <img src="../img/iphone/1.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                          <h5 class="card-title">ايفون جولد</h5>
+                          <p class="card-text">4000000 ح.م</p>
+                          <p class="card-text">
+                            <i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i>
+                          </p>
+                          <button class="btn btn-secondary">
+                            اضف الى السلة <i class="fas fa-shopping-cart text-dark"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col position-relative">
+                      <div class="over position-absolute">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-shopping-bag"></i>
+                      </div>
+                      <div class="card h-100">
+                        <img src="../img/iphone/1.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                          <h5 class="card-title">ايفون 128</h5>
+                          <p class="card-text">5000000 ح.م</p>
+                          <p class="card-text">
+                            <i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i>
+                          </p>
+                          <button class="btn btn-secondary">
+                            اضف الى السلة <i class="fas fa-shopping-cart text-dark"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col position-relative">
+                      <div class="over position-absolute">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-shopping-bag"></i>
+                      </div>
+                      <div class="card h-100">
+                        <img src="../img/iphone/1.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                          <h5 class="card-title">ايفون 128</h5>
+                          <p class="card-text">5000000 ح.م</p>
+                          <p class="card-text">
+                            <i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i>
+                          </p>
+                          <button class="btn btn-secondary">
+                            اضف الى السلة <i class="fas fa-shopping-cart text-dark"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col position-relative">
+                      <div class="over position-absolute">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-shopping-bag"></i>
+                      </div>
+                      <div class="card h-100">
+                        <img src="../img/iphone/1.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                          <h5 class="card-title">ايفون 128</h5>
+                          <p class="card-text">5000000 ح.م</p>
+                          <p class="card-text">
+                            <i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i>
+                          </p>
+                          <button class="btn btn-secondary">
+                            اضف الى السلة <i class="fas fa-shopping-cart text-dark"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col position-relative">
+                      <div class="over position-absolute">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-shopping-bag"></i>
+                      </div>
+                      <div class="card h-100">
+                        <img src="../img/iphone/1.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                          <h5 class="card-title">ايفون 128</h5>
+                          <p class="card-text">5000000 ح.م</p>
+                          <p class="card-text">
+                            <i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i
+                            ><i class="far fa-star text-dark"></i>
+                          </p>
+                          <button class="btn btn-secondary">
+                            اضف الى السلة <i class="fas fa-shopping-cart text-dark"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+             
+                </div>
+              </section>
+          
+
+           </div>
+       </div>
+    </div>
+  </section>
+
+
+
+
+      <footer>
+        <div class="container">
+          <div class="content">
+            <div class="col1 col">
+              <img src="../img/header/logo2.png" alt="" />
+              <p class="title">:العنوان</p>
+              <p class="title text-muted">الشيخ زايد مول داون تون</p>
+              <p class="socil">
+                <i class="fab fa-twitter"></i> <i class="fab fa-twitter"></i>
+                <i class="fab fa-twitter"></i>
+              </p>
+            </div>
+  
+            <div class="col2 col">
+              <h5>من نحن</h5>
+              <p><a href="">سياسة الخصوصية</a></p>
+              <p><a href=""> الشروط والاحكام</a></p>
+              <p><a href="">اتصل بنا</a></p>
+            </div>
+            <div class="col3 col">
+              <h5>المستخدم</h5>
+              <p><a href=""> تسجيل حساب جديد</a></p>
+              <p><a href=""> قم بالدخول الان </a></p>
+              <p><a href=""> المفضلة</a></p>
+              <p><a href=""> السلة</a></p>
+            </div>
+            <div class="col4 col">
+              <h5>القائمة البريدية</h5>
+              <p class="text-muted">قم بالاشتراك ليصلك كل جديد</p>
+              <div class="contact d-flex">
+                <input
+                  placeholder="ادخل بريدك الالكترونى"
+                  class="form-control w-100 sebscip"
+                  type="text"
+                />
+                <button class="btn btn-secondary">ارسال</button>
+              </div>
+              <div class="download d-flex">
+                <img src="../img/foot/app.png" alt="" />
+                <img src="../img/foot/play.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="botoomfoot">
+          <div class="container">
+            <div class="left">
+              <p class="copytight">
+                © Paris Rose Gold Company 2022 - كل الحقوق محفوظة تدار بواسطة
+                Paymac.net make <a href="">mohmed Yoursy</a>
+              </p>
+            </div>
+            <div class="right">
+              <img src="../img/foot/botoom/Group 4278.png" alt="" />
+              <img src="../img/foot/botoom/Visa_logo.png.png" alt="" />
+              <img src="../img/foot/botoom/fawry.png" alt="" />
+              <img src="../img/foot/botoom/o-cash.png" alt="" />
+              <img src="../img/foot/botoom/w-cash.png" alt="" />
+              <img src="../img/foot/botoom/v-cash.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+      <div class="hidfooter bg-dark d-none">
+        <div class="container">
+          <div class="content">
+            <div class="item">
+             <a href="../index.html"> <i class="fas fa-home"></i></a>
+            </div>
+            <div class="item">
+              <a href="./acssoir.html"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+            <div class="item pars">
+              <i class="far fa-user"></i>
+            </div>
+            <div class="item">
+             <a href="#"> <i class="far fa-heart"></i></a>
+            </div>
+            <div class="item">
+              <a href="#"><img src="../img/foot/sale-tag (3).png"></img></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="toTop ">
+        <i class="fas fa-angle-double-up"></i>
+      </div>
+     
+
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../js/home.js"></script>
+  </body>
+</html>
