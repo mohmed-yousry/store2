@@ -1,0 +1,109 @@
+@use "./rouls" as *;
+@use "./mixin" as *;
+@import "./footer";
+@import "./nev";
+
+.filter {
+  .container {
+    .title {
+      .left {
+        h2 {
+          flex-shrink: 0;
+          margin-left: 1rem;
+        }
+        select {
+          border: 1px solid black;
+        }
+      }
+
+      .right {
+        i {
+          transition-duration: 0.4s;
+          &:hover {
+            color: $colorText !important;
+          }
+        }
+        @media (max-width: 575px) {
+          display: none;
+        }
+      }
+    }
+
+    .prodects {
+      @media (max-width: 767px) {
+        .left {
+          margin-bottom: 1.5rem;
+
+          .accordion-button {
+            justify-content: space-between;
+          }
+          .accordion-button::after {
+            margin-left: inherit !important;
+          }
+        }
+        flex-direction: column;
+      }
+
+      .right {
+        width: 75%;
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.max-salary {
+  .container {
+    h2 {
+      @extend %card-title-tensik;
+    }
+
+    .col {
+      cursor: pointer;
+      img {
+        transition: 0.4s;
+      }
+      .over {
+        display: flex;
+        flex-direction: column;
+        left: 2rem;
+        top: 2rem;
+        z-index: 1;
+        display: none;
+        i {
+          background-color: black;
+          @extend %center;
+          @include cir(40px);
+          margin-bottom: 1rem;
+          transition-duration: 0.4s;
+          &:hover {
+            background-color: red;
+            color: white;
+          }
+        }
+      }
+
+      &:hover {
+        .over {
+          display: flex;
+        }
+
+        img {
+          opacity: 0.3;
+          transform: scaleX(-1);
+        }
+      }
+    }
+    .card {
+      .card-title {
+        font-size: large;
+      }
+      .card-title,
+      .card-text {
+        color: black !important;
+      }
+    }
+  }
+}

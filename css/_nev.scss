@@ -1,0 +1,236 @@
+// start top header
+.top-header {
+  padding: 15px;
+  .search {
+    position: relative;
+    margin-left: 1rem;
+    input {
+      width: 100%;
+      padding: 10px;
+      &:focus {
+        outline: none;
+      }
+    }
+    .iconserch {
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+      transform: translate(-50%, -50%);
+      z-index: 11;
+      background-color: $colorText;
+      height: 100%;
+      padding: 0px 1rem;
+      display: flex;
+      i {
+        color: black;
+        @extend %center;
+      }
+    }
+  }
+
+  .left {
+    margin-right: 1rem;
+    display: flex;
+    color: white;
+    .leng {
+      margin-left: 5em;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      span {
+        margin-left: 0.5rem;
+      }
+    }
+    i {
+      color: white;
+      margin-left: 1rem;
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: 767px) {
+    & {
+      display: none;
+    }
+  }
+}
+
+// End top header
+
+// start nav
+.navbar {
+  background-color: $colorText;
+  position: sticky;
+  top: 0;
+  z-index: 11;
+  .nav-item {
+    a {
+      .far.fa-align-justify {
+        font-size: 20px;
+      }
+      cursor: pointer;
+      color: black;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    & {
+      background-color: black;
+    }
+    .nav {
+      border-bottom: 1px solid gray;
+      .nav-item {
+        a,
+        i {
+          color: $colorText;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 557px) {
+    .nav {
+      border: none;
+    }
+    .nav-item {
+      display: none;
+    }
+
+    .nav-item.togle,
+    .logo.nav-item,
+    .nav-item.sochil {
+      display: flex !important;
+      color: white;
+    }
+    .nav-item.sochil {
+      margin-right: 1rem;
+      i {
+        margin-left: 0.4rem;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+// start nav
+
+header {
+  .carousel-caption {
+    .content {
+      position: absolute;
+      padding: 30px;
+      height: auto;
+      width: 450px;
+      bottom: 400%;
+      left: 65%;
+      background: rgb(16 15 15 / 65%);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .title {
+        color: $colorText;
+        font-size: 25px;
+        font-weight: bolder;
+      }
+
+      .links {
+        @extend %center;
+        .cursol-link {
+          padding: 10px;
+          background-color: $colorText;
+          border-radius: 10px;
+          color: black;
+          margin-left: 1rem;
+          transition-duration: 0.3s;
+          &:hover {
+            background-color: black;
+            color: white;
+          }
+        }
+        .curoir-btn {
+          background-color: $colorText;
+          margin-left: 1rem;
+          @include cir(30px);
+          @extend %center;
+          color: black;
+          cursor: pointer;
+          transition-duration: 0.3s;
+          font-size: 20px;
+          &:hover {
+            background-color: black;
+            color: $colorText;
+          }
+        }
+      }
+    }
+  }
+}
+
+#offcanvasExample {
+  &.offcanvas-start {
+    width: 90% !important;
+  }
+  .parsonil {
+    background-color: $colorText;
+    border-radius: 12px;
+    .content {
+      text-align: center;
+      p {
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .imgpar {
+        width: 30%;
+        border-radius: 50%;
+        margin-bottom: 0.5rem;
+      }
+      .unitstat {
+        width: 40px;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+
+  .links {
+    p {
+      border-bottom: 1px solid gray;
+      padding: 8px;
+      padding-bottom: 15px;
+      &:last-of-type {
+        border-bottom: none;
+        a {
+          margin-left: 2rem;
+        }
+      }
+      a {
+        color: $colorText;
+        font-size: 20px;
+      }
+    }
+  }
+
+  #accirdion {
+    border-bottom: 1px solid gray;
+
+    * {
+      background-color: transparent !important;
+      color: $colorText !important;
+      font-size: 20px;
+    }
+    .accordion-button {
+      color: $colorText !important;
+    }
+  }
+  .accordion-button::after {
+    background-image: none !important;
+    border: transparent 8px solid;
+    border-top-color: $colorText;
+    margin-left: 0;
+  }
+}

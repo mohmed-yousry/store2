@@ -1,0 +1,11 @@
+%center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin cir($wid) {
+  border-radius: 50%;
+  width: $wid;
+  height: $wid;
+}
